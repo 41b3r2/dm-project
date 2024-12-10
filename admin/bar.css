@@ -1,0 +1,88 @@
+.Rank {
+    position: relative;
+    display: grid;
+    min-height: 300px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.Rank .img8x1 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5%; 
+}
+
+.Rank .img8x1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rankhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -10%;
+}
+
+.rankhead h2 {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.ranking-container {
+    display: grid;
+    gap: 10px;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 5px;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ranking-item:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.ranking-item:hover .ranking-bar {
+    background: var(--white);
+}
+
+.ranking-details h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.ranking-details h4 span {
+    font-size: 14px;
+    color: var(--black2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ranking-bar {
+    height: 20px; /* Increased height to make it thicker */
+    background-color: #68B2A0; /* New color */
+    border-radius: 0; /* Removed rounding */
+    transition: background 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .rankhead h2 {
+        font-size: 20px;
+    }
+}
